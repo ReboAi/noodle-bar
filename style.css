@@ -72,6 +72,11 @@
     margin: 1.5rem auto;
 }
 
+/*-- Correction for iOS --*/
+.fixed-background {
+    overflow: hidden; 
+}
+
 /*Fixed background*/
 .fixed{
     background-image: url("./images/challenge.png");
@@ -79,11 +84,6 @@
 }
 .fixed-background{
     padding: 10rem 0;
-}
-
-/*-- Correction for iOS --*/
-.fixed-background {
-    overflow: hidden; 
 }
 
 /*-- Fixed Background Image --*/
