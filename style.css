@@ -81,6 +81,11 @@
     padding: 10rem 0;
 }
 
+/*-- Correction for iOS --*/
+.fixed-background {
+    overflow: hidden; 
+}
+
 /*-- Fixed Background Image --*/
 .fixed-background {
     position: relative;
@@ -111,9 +116,4 @@
   }
   .mt-5{
     margin-top: 5rem !important;
-  }
-
-  /*-- Correction for iOS --*/
-  .fixed-background {
-    overflow: hidden; 
   }
