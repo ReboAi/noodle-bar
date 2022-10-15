@@ -117,3 +117,30 @@
   .mt-5{
     margin-top: 5rem !important;
   }
+
+  #menu {
+    border: 5px solid black;
+    text-align: center;
+    margin-right: 22px;
+    background: rgba(240, 240, 240,0.7);
+  }
+
+  #about {
+    border: 5px solid black;
+    text-align: left;
+    margin-right: 22px;
+    background: rgba(240, 240, 240,0.7);
+  }
+
+  #m1 {
+    font-family: 'Brush Script MT', cursive;
+    color: white;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 1)!important;
+  }
+
+  #m2 {
+    font-family: Garamond, serif;
+    margin:0px;
+    padding:0px;
+  }
