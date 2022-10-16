@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--REQUIRED META TAGS-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--FONT AWESOME CDN-->
+    <script src="https://kit.fontawesome.com/e8778a5f5d.js" crossorigin="anonymous"></script>
+    
+    <!--BOOTSTRAP CDN-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <!--CUSTOM CSS-->
     <link rel="stylesheet" href="style.css">
+    
+    <!--GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!--LOGO AND TITLE IN THE BOWSER TAB-->
     <link rel="shortcut icon" type="image" href="images/noodle logo white.png">
     <title>The Noodle Bar</title>
 </head>
-<body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-        <!--Logo in navbar-->
-        <div class="container">
-            <a href="index.html" class="navbar-brand"><img src="images/noodle logo white.png" alt="Logo">The Noodle Bar</a>
 
-            <!--Hamburger menu-->
+<body>
+    <!--START OF NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <!--LOGO IN NAVBAR-->
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="images/noodle logo white.png" alt="Logo"><strong>The Noodle Bar</strong></a>
+
+            <!--HAMBURGER MENU-->
             <button 
                 class="navbar-toggler" 
                 type="button" 
@@ -28,9 +41,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <!--Navbar items-->
+            <!--NAVBAR ITEMS-->
             <div class="collapse navbar-collapse" id="navmenu">  <!--Hamburger menu targets this div through id-->
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto nav-fill w-100">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link active">Home</a>
                     </li>
@@ -46,19 +59,53 @@
                     <li class="nav-item">
                         <a href="games.html" class="nav-link">Games</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visit Us</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                          <a class="dropdown-item" href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
+                          <a class="dropdown-item" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                        </div>
                 </ul>
 
-                <!--Search bar-->
+                <!--SEARCH BAR-->
                 <form class="form-inline">
-                    <input type="search" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
-                    <button type="submit" class="btn btn-light my-sm-0">Search</button>
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search here" aria-label="Search">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-light">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
                 </form>
             </div>    
         </div>
     </nav>
+    <!--END OF NAVBAR-->
 
-    <!--Carousel-->
+    <!--START OF SOCIAL SIDEBAR-->
+    <div class="container">
+        <div class="buttons-sidebar">
+            <ul class="navbar-nav">
+                <li class="nav-link">
+                    <a href="https://www.facebook.com/" target="_blank"><span class="icon"><i class="fa-brands fa-square-facebook"></i></span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://web.whatsapp.com/" target="_blank"><span class="icon"><i class="fa-brands fa-whatsapp"></i></span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://www.instagram.com/" target="_blank"><span class="icon"><i class="fa-brands fa-instagram"></i></span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--END OF SOCIAL SIDEBAR-->
+
+    <!--START OF CAROUSEL-->
     <div id="foodCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <!--CAROUSEL INDICATORS-->
         <ol class="carousel-indicators">
             <li data-target="#foodCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#foodCarousel" data-slide-to="1"></li>
@@ -66,7 +113,7 @@
             <li data-target="#foodCarousel" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
-            <!--Item 1-->
+            <!--ITEM 1-->
             <div class="carousel-item active">
                 <div class="overlay-image" style="background-image: url(./images/carousel\ 1.jpg);"></div>
                 <div class="container_carousel">
@@ -75,7 +122,7 @@
                     <a href="https://unsplash.com/photos/hJKJQrsNHGQ" target="_blank" class="btn btn-outline-light btn-lg">View details</a>
                 </div>
             </div>
-            <!--Item 2-->
+            <!--ITEM 2-->
             <div class="carousel-item">
                 <div class="overlay-image" style="background-image: url(./images/carousel\ 2.jpg);"></div>
                 <div class="container_carousel">
@@ -84,7 +131,7 @@
                     <a href="https://unsplash.com/photos/Xe14NrSK9io" target="_blank" class="btn btn-outline-light btn-lg">View details</a>
                 </div>
             </div>
-            <!--Item 3-->
+            <!--ITEM 3-->
             <div class="carousel-item">
                 <div class="overlay-image" style="background-image: url(./images/carousel\ 3.jpg);"></div>
                 <div class="container_carousel">
@@ -93,7 +140,7 @@
                     <a href="https://unsplash.com/photos/r01ZopTiEV8" target="_blank" class="btn btn-outline-light btn-lg">View details</a>
                 </div>
             </div>
-            <!--Item 4-->
+            <!--ITEM 4-->
             <div class="carousel-item">
                 <div class="overlay-image" style="background-image: url(./images/carousel\ 4.jpg);"></div>
                 <div class="container_carousel">
@@ -103,32 +150,37 @@
                 </div>
             </div>
         </div>
-        <!--Previous button (left arrow)-->
+        <!--PREVIOUS BUTTON (LEFT ARROW)-->
         <button class="carousel-control-prev" type="button" data-target="#foodCarousel" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </button>
-        <!--Next button (right arrow)-->
+        <!--NEXT BUTTON (RIGHT ARROW)-->
         <button class="carousel-control-next" type="button" data-target="#foodCarousel" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </button>
     </div>
+    <!--END OF CAROUSEL-->
 
-    <!--Restaurant name and description-->
+    <!--RESTAURANT NAME AND DESCRIPTION-->
     <div class="col-12 narrow text-center">
         <h1>THE NOODLE BAR</h1>
+        <div class="heading-underline"></div>
         <p class="lead">The approach to our menu was easy. We had no interest in trying to reinvent food. 
             We went with choices that were popular amongst noodle lovers — basic, down-home style — just from a wide range of regions. 
             We are known for our different types of noodle dishes - Fried noodles, soup bowls, vegetarian, spicy noodles, you name it!</p>
     </div>
 
-    <!--Fixed background: Noodle deals-->
+    <!--FIXED BACKGROUND: NOODLE DEALS-->
     <div class="fixed-background">
-        <div class="row text-light py-5">
-            <div class="col-12 text-center">
-                <h1>Example deal</h1>
-                <h3 class="py-4">Example deals...</h3>
+        <div class="row text-light py-5 px-5">
+            <div class="col-12 bg-custom text-center py-3">
+                <h1>TRY OUR NEW FIRE NOODLES TODAY!</h1>
+                <h4 class="py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, 
+                    dignissimos ipsum itaque eveniet repudiandae quibusdam. Doloremque ipsam hic 
+                    exercitationem quidem molestias. Dicta ad numquam labore.</h4>
+                    <a href="#" class="btn btn-outline-light btn-lg">Order Now</a>
             </div>
         </div>
         <div class="fixed-wrap">
@@ -136,48 +188,122 @@
         </div>
     </div>
 
-    <!--Reviews-->
-    <div class="col-12 text-center mt-5">
-        <h1 class="pt-4">Reviews</h1>
-        <p class="lead">See what others have to say about us.</p>
+    <!--START OF POPULAR CHOICES-->
+    <div class="col-12 narrow text-center mt-5">
+        <h2 class="pt-4">POPULAR CHOICES</h2>
+        <div class="heading-underline"></div>
+        <p class="lead">A selection of our top 3 dishes this month.</p>
     </div>
 
-    <!--Three (3) column section-->
+    <!--THREE (3) COLUMN SECTION OF POPULAR CHOICES-->
     <div class="container">
         <div class="row my-5">
 
-            <div class="col-md-4 my-4">
-                <img src="images/review1.jpg" alt="review1" class="w-100">
-                <h4 class="my-4">Really delicious!</h4>
-                <p><b>NoodleLover420</b> - Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            <div class="custom-rd col-md-4 my-4">
+                <img src="images/choice1.jpg" alt="review1" class="w-100">
+                <h4 class="my-4">Beef Noodles</h4>
+                <hr class="reviews-hr">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                     Excepturi facere voluptate repellat at? 
                     Consequuntur consectetur similique culpa fuga nemo error minus </p>
+                    <a href="/menu.html" class="btn btn-outline-dark btn-md">Order Now</a>
             </div>
 
-            <div class="col-md-4 my-4">
-                <img src="images/review1.jpg" alt="review1" class="w-100">
-                <h4 class="my-4">Really delicious!</h4>
-                <p><b>NoodleLover420</b> - Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            <div class="custom-rd col-md-4 my-4">
+                <img src="images/choice2.jpg" alt="review1" class="w-100">
+                <h4 class="my-4">Chicken Noodles</h4>
+                <hr class="reviews-hr">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                     Excepturi facere voluptate repellat at? 
                     Consequuntur consectetur similique culpa fuga nemo error minus </p>
+                    <a href="/menu.html" class="btn btn-outline-dark btn-md">Order Now</a>
             </div>
 
-            <div class="col-md-4 my-4">
-                <img src="images/review1.jpg" alt="review1" class="w-100">
-                <h4 class="my-4">Really delicious!</h4>
-                <p><b>NoodleLover420</b> - Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            <div class="custom-rd col-md-4 my-4">
+                <img src="images/choice3.jpg" alt="review1" class="w-100">
+                <h4 class="my-4">Shrimp Noodles</h4>
+                <hr class="reviews-hr">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                     Excepturi facere voluptate repellat at? 
                     Consequuntur consectetur similique culpa fuga nemo error minus </p>
+                    <a href="/menu.html" class="btn btn-outline-dark btn-md">Order Now</a>
             </div>
 
         </div>
     </div>
+    <!--END OF POPULAR CHOICES-->
+
+    <!--START OF JUMBOTRON-->
+    <div class="jumbotron">
+        <div class="col-12 narrow text-center">
+            <h2 class="heading">REVIEWS</h2>
+            <div class="heading-underline"></div>
+            <p class="lead">See what others have to say about us.</p>
+        </div>
+        <!--START OF ROWS-->
+        <div class="row">
+            <!--REVIEW 1-->
+            <div class="col-md-6 reviews">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="/images/review1.jpg" alt="review">
+                    </div>
+                    <div class="col-md-8">
+                        <blockquote><i class="fa-solid fa-quote-left"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ex. 
+                        Nihil porro, earum cum ut assumenda dolore dicta accusamus eaque eos tenetur molestiae 
+                        commodi aut illum rem dolorum ipsam at?
+                        <hr class="reviews-hr">
+                        <cite>&#8212; Noodle Lover420 </cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <!--REVIEW 2-->
+            <div class="col-md-6 reviews">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="/images/review2.jpg" alt="review">
+                    </div>
+                    <div class="col-md-8">
+                        <blockquote><i class="fa-solid fa-quote-left"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ex. 
+                        Nihil porro, earum cum ut assumenda dolore dicta accusamus eaque eos tenetur molestiae 
+                        commodi aut illum rem dolorum ipsam at?
+                        <hr class="reviews-hr">
+                        <cite>&#8212; Nameless Stranger </cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END OF ROWS-->
+
+        <!--LOAD MORE REVIEWS BUTTON-->
+        <div class="col-12 narrow text-center">
+            <a href="#" class="btn btn-secondary btn-md">Load more reviews</a>
+        </div>
+    </div>
+    <!--END OF JUMBOTRON-->
     
+    <!--START OF FOOTER-->
+    <footer>
+        <div class="row justify-content-center">
+            <div class="col-md-5 text-center">
+                <a href="index.html" class="navbar-brand"><img src="images/noodle logo white.png" alt="Logo"><strong>THE NOODLE BAR</strong> </a>
+                <p>Experience the great food - Experience Noodles</p>
+                <strong>Contact Info</strong>
+                <p>(+597) 444-5555 <br>thenoodlebar@outlook.com <br>Kristalstraat no.100</p>
+            </div>
+
+            <hr class="socket">
+            &copy; All rights reserved to The Noodle Bar.
+        </div>
+    </footer>
+    <!--END OF FOOTER-->
     
 
-
-
-
+    <!--JQUERY AND BOOTSTRAP BUNDLE (INCLUDES POPPER)-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 

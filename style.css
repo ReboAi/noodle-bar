@@ -1,4 +1,4 @@
-/*Navbar styling*/
+/*NAVBAR*/
 .navbar-brand img{
     height: 3rem;
 }
@@ -10,7 +10,11 @@
     color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
     background: rgba(0, 0, 0, 0.8)!important;
-    z-index: 1;
+    z-index: 7;
+}
+.navbar a:hover{
+    color: rgb(239, 136, 41)!important;
+    transition: all 400ms ease;
 }
 .nav-item{
     padding: 8px;
@@ -23,8 +27,44 @@
     color: rgb(239, 136, 41)!important;
 }
 
+/*SOCIAL SIDE BAR*/
+.buttons-sidebar{
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-10%);
+    z-index: 6;
+}
+.buttons-sidebar .nav-link{
+    display: block;
+    text-align: center;
+    padding: 8px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+.buttons-sidebar .icon{
+    background-color: #46515E;
+    padding: 7px 10px;
+    color: white;
+    border-radius: 10px;
+}
+.buttons-sidebar .nav-link:nth-child(1) .icon:hover{
+    background-color: #4267B2;
+    transition: all 400ms ease;
+}
+.buttons-sidebar .nav-link:nth-child(2) .icon:hover{
+    background-color: #128c7e;
+    transition: all 400ms ease;
+}
+.buttons-sidebar .nav-link:nth-child(3) .icon:hover{
+    background-color: #C13584;
+    transition: all 400ms ease;
+}
 
-/*Carousel styling*/
+/*CAROUSEL*/
 #foodCarousel{
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
@@ -66,18 +106,18 @@
     top: 50%;
 }
 
-/*Restaurant name*/
+/*RESTAURANT NAME AND DESCRIPTION*/
 .narrow{
     width: 75%;
     margin: 1.5rem auto;
 }
 
-/*-- Correction for iOS --*/
+/*FIXED BACKGROUND IMAGE CORRECTION FOR iOS*/
 .fixed-background {
     overflow: hidden; 
 }
 
-/*Fixed background*/
+/*FIXED BACKGROUND IMAGE AND TEXT*/
 .fixed{
     background-image: url("./images/challenge.png");
     position: fixed;
@@ -85,14 +125,24 @@
 .fixed-background{
     padding: 10rem 0;
 }
+.fixed-background h1{
+    text-shadow: 2px 2px 4px #000000;
+}
+.fixed-background h4{
+    text-shadow: 2px 2px 4px #000000;
+}
+.bg-custom{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+}
 
-/*-- Fixed Background Image --*/
+/*FIXED BACKGROUND IMAGE PAGE LAYOUT AND POSITIONING*/
 .fixed-background {
     position: relative;
     width: 100%;
-    z-index: 1000!important;
-  }
-  .fixed-wrap {
+    z-index: 5!important;
+}
+.fixed-wrap {
     clip: rect(0, auto, auto, 0);
     position: absolute;
     top: 0;
@@ -100,8 +150,8 @@
     width: 100%;
     height: 100%;
     z-index: -999 !important;
-  }
-  .fixed {
+}
+.fixed {
     z-index: -999!important;
     display: block;
     top: 0;
@@ -113,7 +163,70 @@
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     will-change: transform;
-  }
-  .mt-5{
+}
+.mt-5{
     margin-top: 5rem !important;
-  }
+}
+.mt-0{
+    margin-top: 5rem !important;
+}
+.px-5{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*POPULAR CHOICES SECTION*/
+.custom-rd img{
+    border-radius: 1rem;
+}
+  
+/*JUMBOTRON & REVIEW SECTION*/
+.reviews img{
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+blockquote .fa-solid{
+    color: rgb(239, 136, 41);
+    margin: 1rem;
+}
+.reviews-hr{
+    border-top: 0.1rem solid rgb(239, 136, 41);
+}
+.heading-underline{
+    border-top: 0.2rem solid rgb(239, 136, 41);
+    width: 10rem;
+    margin: 0 auto 1rem;
+}
+
+/*FOOTER SECTION*/
+footer{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 2rem 0 2rem;
+    margin-top: 1rem;
+}
+footer img{
+    margin: 1rem 0.5rem;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: rgb(239, 136, 41);
+    transition: all 400ms ease;
+}
+hr.socket{
+    width: 100%;
+    border-top: 0.1rem solid #7e7e7e;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+}
+
+
+/*MENU PAGE*/
+.card img{
+    width: 110px;
+    height: 80px;
+    box-shadow: 5px 5px 5px;
+}
