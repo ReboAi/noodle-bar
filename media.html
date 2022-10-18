@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--REQUIRED META TAGS-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FONT AWESOME CDN-->
+    <script src="https://kit.fontawesome.com/e8778a5f5d.js" crossorigin="anonymous"></script>
+
+    <!--BOOTSTRAP CDN-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!--CUSTOM CSS-->
     <link rel="stylesheet" href="style.css">
+
+    <!--GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--LOGO AND TITLE IN THE BOWSER TAB-->
     <link rel="shortcut icon" type="image" href="images/noodle logo white.png">
     <title>Media</title>
-
-    <style>
-    body {
-      background-image: url('images/carousel 1.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-    }
-    </style>
-
 </head>
-<body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-        <!--Logo in navbar-->
-        <div class="container">
-            <a href="index.html" class="navbar-brand"><img src="images/noodle logo white.png" alt="Logo">The Noodle Bar</a>
 
-            <!--Hamburger menu-->
+<body>
+    <!--START OF NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <!--LOGO IN NAVBAR-->
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="images/noodle logo white.png" alt="Logo"><strong>The Noodle Bar</strong></a>
+
+            <!--HAMBURGER MENU-->
             <button
                 class="navbar-toggler"
                 type="button"
@@ -38,9 +41,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!--Navbar items-->
+            <!--NAVBAR ITEMS-->
             <div class="collapse navbar-collapse" id="navmenu">  <!--Hamburger menu targets this div through id-->
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto nav-fill w-100">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">Home</a>
                     </li>
@@ -56,29 +59,75 @@
                     <li class="nav-item">
                         <a href="games.html" class="nav-link">Games</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visit Us</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                          <a class="dropdown-item" href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
+                          <a class="dropdown-item" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                        </div>
                 </ul>
 
-                <!--Search bar-->
+                <!--SEARCH BAR-->
                 <form class="form-inline">
-                    <input type="search" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
-                    <button type="submit" class="btn btn-light my-sm-0">Search</button>
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search here" aria-label="Search">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-light">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
     </nav>
+    <!--END OF NAVBAR-->
 
-    <div class="mt-5 ml-4" id="menu">
+    <!--START OF SOCIAL SIDEBAR-->
+    <div class="container">
+        <div class="buttons-sidebar">
+            <ul class="navbar-nav">
+                <li class="nav-link">
+                    <a href="https://www.facebook.com/" target="_blank"><span class="icon"><i class="fa-brands fa-square-facebook"></i></span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://web.whatsapp.com/" target="_blank"><span class="icon"><i class="fa-brands fa-whatsapp"></i></span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://www.instagram.com/" target="_blank"><span class="icon"><i class="fa-brands fa-instagram"></i></span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--END OF SOCIAL SIDEBAR-->
+
+    <!--START OF MEDIA-->
+  <div class="col-12">
+    <div class="mt-5 mx-4" id="menu">
         <h1 style="background:rgba(0, 0, 0, 1); color:white;"
         >Visit our Youtube Channel!<br>
           <a href="https://www.youtube.com/c/NinosHome" target="_blank">>The Noodle Bar<</a>
         </h1>
+        <div class="row my-2 mx-2">
+          <div class="custom-rd col-md-4 my-4">
+            <div class="embed-responsive embed-responsive-1by1">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aGKMwZS6zCM"></iframe>
+            </div>
+          </div>
+          <div class="custom-rd col-md-4 my-4">
+            <div class="embed-responsive embed-responsive-1by1">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/14DQQ30-y_0"></iframe>
+            </div>
+          </div>
+          <div class="custom-rd col-md-4 my-4">
+            <div class="embed-responsive embed-responsive-1by1">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_Tr6DD2Ncp8"></iframe>
+            </div>
+        </div>
+        </div>
 
-        <iframe width="345" height="345" src="https://www.youtube.com/embed/aGKMwZS6zCM">
-        </iframe>
-        <iframe width="345" height="345" src="https://www.youtube.com/embed/14DQQ30-y_0">
-        </iframe>
-        <iframe width="345" height="345" src="https://www.youtube.com/embed/_Tr6DD2Ncp8">
-        </iframe>
 
         <p id="m2">de Finibus Bonorum et Malorum de Finibus Bonorum et Malorum de Finibus Bonorum et Malorum Malorum<br><br>
            de Finibus Bonorum et Malorum de Finibus Bonorum et Malorum de Finibus Bonorum et Malorum<br><br>
@@ -87,13 +136,32 @@
         </p>
 
       </div>
+  </div>
+
+    <!--END OF MEDIA-->
+
+    <!--START OF FOOTER-->
+    <footer>
+        <div class="row justify-content-center">
+            <div class="col-md-5 text-center">
+                <a href="index.html" class="navbar-brand"><img src="images/noodle logo white.png" alt="Logo"><strong>THE NOODLE BAR</strong> </a>
+                <p>Experience the great food - Experience Noodles</p>
+                <strong>Contact Info</strong>
+                <p>(+597) 444-5555 <br>thenoodlebar@outlook.com <br>Kristalstraat no.100</p>
+            </div>
+
+            <hr class="socket">
+            &copy; All rights reserved to The Noodle Bar.
+        </div>
+    </footer>
+    <!--END OF FOOTER-->
 
 
-
-
+    <!--JQUERY AND BOOTSTRAP BUNDLE (INCLUDES POPPER)-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
 </body>
+</html>
