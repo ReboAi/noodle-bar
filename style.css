@@ -174,8 +174,8 @@
     margin-top: 5rem !important;
 }
 .px-5{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /*POPULAR CHOICES SECTION*/
@@ -241,7 +241,7 @@ hr.socket{
 
 /*========== MENU PAGE ==========*/
 .menu-bg{
-    background: url(./images/menu_bg.png);
+    background: url(./images/menu_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
