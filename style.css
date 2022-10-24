@@ -1,4 +1,7 @@
 /*========== HOME PAGE ==========*/
+html, body-index {
+    overflow-x: hidden;
+}
 /*NAVBAR*/
 .navbar-brand img{
     height: 3rem;
@@ -181,7 +184,7 @@
 /*POPULAR CHOICES SECTION*/
 .custom-rd img{
     border-radius: 1rem;
-    border: 2px solid black;
+    box-shadow: 0 0.5rem 0.5rem rgb(165, 165, 165);
 }
 .btn-outline-dark{
     border-radius: 0px !important;
@@ -191,7 +194,7 @@
 .reviews img{
     width: 100%;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid rgb(239, 136, 41);
 }
 blockquote .fa-solid{
     color: rgb(239, 136, 41);
