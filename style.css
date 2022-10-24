@@ -1,7 +1,12 @@
 /*========== HOME PAGE ==========*/
-html, body-index {
-    overflow-x: hidden;
+
+/*HORIZONTAL SCROLLBAR FIX*/
+html, body{
+  width:100%;
+  overflow-x:hidden;
+  position:relative;
 }
+
 /*NAVBAR*/
 .navbar-brand img{
     height: 3rem;
@@ -238,47 +243,6 @@ hr.socket{
     border-top: 0.1rem solid #7e7e7e;
     margin-top: 1rem;
     padding-top: 0.5rem;
-}
-
-
-
-/*========== MENU PAGE ==========*/
-.menu-bg{
-    background: url(./images/menu_bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-}
-.card{
-    box-shadow: 0.5rem 0.5rem 0.5rem rgb(219, 219, 219);
-}
-.card-img-top{
-    height: 14rem;
-    object-fit: cover;
-    object-position: center;
-}
-#menu {
-    margin-top: 5rem;
-    padding-top: 2rem;
-    text-align: center;
-    background: rgba(240, 240, 240,0.7);
-}
-#about {
-  border: 5px solid black;
-  text-align: left;
-  background: rgba(240, 240, 240,0.7);
-}
-#m1 {
-  color: white;
-  border: 1px solid black;
-  background: rgba(0, 0, 0, 1)!important;
-}
-#m2 {
-  margin:0px;
-  padding:0px;
 }
 
 
