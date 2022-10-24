@@ -4,4 +4,5 @@ A group project for our "Web Programming" module - Period 3 at PTC
 
 Authors : Ebecilio Lennox, Mertopawiro Andy, Rebo Ahmad, Van Der Erf Chayenne, Wanisha Gauri
 
-![noodle logo white small](https://user-images.githubusercontent.com/58387392/197628157-dc287af2-b6cf-4de8-a4be-be9386851208.png)
+
+![noodle logo white small](https://user-images.githubusercontent.com/58387392/197628408-5a07a7bc-ae87-4588-9cee-e133e01f6c2c.png)
