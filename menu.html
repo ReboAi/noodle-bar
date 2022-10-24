@@ -18,13 +18,16 @@
     
     <!--GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--ANIMATE ON SCROLL LIBRARY-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     
     <!--LOGO AND TITLE IN THE BOWSER TAB-->
     <link rel="shortcut icon" type="image" href="images/noodle logo white.png">
     <title>Menu</title>
 </head>
 
-<body>
+<body class="menu-bg">
     <!--START OF NAVBAR-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <!--LOGO IN NAVBAR-->
@@ -61,11 +64,12 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
-                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visit Us</a>
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Connect</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="https://www.facebook.com/" target="_blank">Facebook</a>
-                          <a class="dropdown-item" href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
-                          <a class="dropdown-item" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                            <a class="dropdown-item" href="login.html">Login</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                            <a class="dropdown-item" href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
+                            <a class="dropdown-item" href="https://www.instagram.com/" target="_blank">Instagram</a>
                         </div>
                 </ul>
 
@@ -104,139 +108,338 @@
     <!--END OF SOCIAL SIDEBAR-->
 
     <!--START OF MENU-->
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-10 mx-auto col-12 text-center mb-3">
-                <h1 class="mt-0">Our Menu</h1>
-                <p class="lead">We offer a large selection of noodles, desserts and beverages for everyone!</p>
-            </div>
-            <!--NOODLES MENU-->
-            <div class="col-12 mt-4">
-                <h3 class="text-center">Noodles</h3>
-                <hr class="accent my-5">
-            </div>
-            <div class="card-columns">
-              <div class="card card-body">
-                    <span class="float-right font-weight-bold"> SRD 50</span>
-                    <h6 class="text-truncate">Egg Noodles</h6>
-                    <img src="images/menu_items/carousel 1.jpg" class="img rounded float-left" alt="Egg Nooles">
-                </div>
-                <div class="card card-body">
-                    <span class="float-right font-weight-bold">SRD 40</span>
-                    <h6 class="text-truncate">Broccoli Noodles</h6>
-                    <img src="images/menu_items/carousel 2.jpg" class="img rounded float-left" alt="Broccoli Nooles">
-                </div>
-                <div class="card card-body">
-                    <span class="float-right font-weight-bold">SRD 120</span>
-                    <h6 class="text-truncate">Shrimp Noodles</h6>
-                    <img src="images/menu_items/carousel 3.jpg" class="img rounded float-left" alt="Shrimp Noodles">
-                </div>
-                <div class="card card-body">
-                    <span class="float-right font-weight-bold">SRD 90</span>
-                    <h6 class="text-truncate">Chiang Mai Noodles</h6>
-                    <img src="images/menu_items/chiangmainoodle.jpg" class="img rounded float-left" alt="Chaing Mai Noodles">
-                </div>
-                <div class="card card-body">
-                    <span class="float-right font-weight-bold">SRD 150</span>
-                    <h6>Beef Noodle Soup</h6>
-                    <img src="images/menu_items/beefnoodle.jpg" class="img rounded float-left" alt="Beef Noodles">
-                </div>
-                <div class="card card-body">
-                    <span class="float-right font-weight-bold">SRD 50</span>
-                    <h6 class="text-truncate">Veggie Noodles</h6>
-                    <img src="images/menu_items/veggienoodle.jpg" class="img rounded float-left" alt="Veggie Noodles">
+    <section id="menu">
+    <div class="container">
+        <div class="title">
+            <h1>WELCOME TO OUR MENU</h1>
+            <p>We offer a large selection of noodles, desserts and beverages for everyone! <br>
+                From vegetarian to seafood to chicken and beef noodles - We have them all!</p>
+            <div class="heading-underline"></div>
+        </div>
+
+        <!--APPETIZERS-->
+        <div class="col-12 narrow text-center mt-5" data-aos="fade-up">
+            <h2 class="pt-4">APPETIZERS</h2>
+            <div class="heading-underline"></div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/beef_dumplings.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Beef Dumplings</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 25</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
                 </div>
             </div>
-            <!--BEVERAGES MENU-->
-            <div class="col-12 mt-4">
-                <h3 class="text-center">Beverages</h3>
-                <hr class="accent my-5">
-            </div>
-            <div class="card-columns">
-                <div class="card card-body">
-                    <span class="float-right font-weight-bold"></span>
-                    <h6 class="text-truncate">Orange Juice</h6>
-                    <img src="images/menu_items/orangejuice.jpg" class="img rounded float-left" alt="Orange Juice">
-                </div>
-                <div class="card card-body">
-                   <span class="float-right font-weight-bold"></span>
-                    <h6 class="text-truncate">Sweet Iced Tea</h6>
-                    <img src="images/menu_items/sweeticetea.jpg" class="img rounded float-left" alt="Sweet Ice Tea">
-                    <p class="small"></p>
-                </div>
-                <div class="card card-body">
-                    <span class="float-right font-weight-bold"></span>
-                    <h6 class="text-truncate">Maracuja Juice</h6>
-                    <img src="images/menu_items/maracuja.png" class="img rounded float-left" alt="Maracuja Juice">
-                </div>
-                <div class="card card-body">
-                    <span class="float-right font-weight-bold"></span>
-                    <h6 class="text-truncate">Kombucha Tea</h6>
-                    <img src="images/menu_items/kombucha.png" class="img rounded float-left" alt="Kombucha Tea">
-                </div>
-                <div class="card card-body">
-                    <span class="float-right font-weight-bold"></span>
-                    <h6 class="text-truncate">Lemon Iced Tea</h6>
-                    <img src="images/menu_items/lemonicetea.jpg" class="img rounded float-left" alt="Lemon Ice Tea">
-                </div>
-                <div class="card card-body">
-                    <span class="float-right font-weight-bold"></span>
-                    <h6 class="text-truncate">Sake</h6>
-                    <img src="images/menu_items/sake.jpg" class="img rounded float-left" alt="Sake">
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/spring_rolls.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Chicken Spring Rolls</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 15</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
                 </div>
             </div>
-            <!--DESSERTS MENU-->
-            <div class="col-12 mt-4">
-                <h3 class="text-center">Desserts</h3>
-                <hr class="accent my-5">
-            </div>
-            <div class="card-columns">
-                <div class="card card-body">
-                    <span class="float-right font-weight-bold"></span>
-                    <h6 class="text-underline">Mochi</h6>
-                    <img src="images/menu_items/mochi.jpg" class="img rounded float-left" alt="Mochi">
-                    <div class="font-weight-bold small">Oreo Flavor</div>
-                    <div class="font-weight-bold small">Red Bean Paste Flavor</div>
-                    <div class="font-weight-bold small">Matcha Flavor</div>
-                    <div class="font-weight-bold small">Vanilla Flavor</div>
-                </div>
-                <div class="card card-body">
-                    <span class="float-right font-weight-bold"></span>
-                    <h6>Dango</h6>
-                    <img src="images/menu_items/dango.jpg" class="img rounded float-left" alt="Dango">
-                </div>
-                <div class="card card-body">
-                    <span class="float-right font-weight-bold"></span>
-                    <h6>Chocolate oatmeal cookies</h6>
-                    <img src="images/menu_items/cookies.jpg" class="img rounded float-left" alt="Oatmeal cookies">
-                </div>
-                <div class="card card-body">
-                    <span class="float-right font-weight-bold"></span>
-                    <h6>Cheesecake</h6>
-                    <img src="images/menu_items/cheesecake.png" class="img rounded float-left" alt="Cheesecake">
-                    <div class="font-weight-bold small">Cherry Flavor</div>
-                    <div class="font-weight-bold small">Chocolate Flavor</div>
-                    <div class="font-weight-bold small">Lemon Flavor</div>
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/onigiri.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Salmon Onigiri</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 15</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 mt-4">
-                <hr class="accent my-5">
-            </div>
-            <div class="col-6 mx-auto">
-                <div class="card card-body text-center">
-                    <h5 class="text-uppercase">Sweet deals!</h5>
-                    <h6>Free dessert!</h6>
-                    <p class="small">First time customers get 1 free dessert of choice.</p>
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/jalapeno_poppers.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Jalapeno Poppers</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 20</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 mt-5 border border-right-0 border-left-0">
-                <div class="row">
-                    <div class="col h5">THE NOODLE BAR</div>
-                    <div class="col h5 text-right">555-NoodleBar</div>
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/tomato_salad.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Tomato Salad</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 20</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
                 </div>
             </div>
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/avocado_salad.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Avocado Salad</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 25</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+        <!--MAIN COURSES-->
+        <div class="col-12 narrow text-center mt-5" data-aos="fade-up">
+            <h2 class="pt-4">ENTREES</h2>
+            <div class="heading-underline"></div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/carousel 1.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Egg noodles</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 50</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/carousel 2.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Broccoli noodles</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 40</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/carousel 3.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Shrimp noodles</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 120</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/chiangmainoodle.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Chiang Mai noodles</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 90</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/beefnoodle.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Beef noodle soup</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 150</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/veggienoodle.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Veggie noodles</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 50</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--DESSERTS-->
+            <div class="col-12 narrow text-center mt-5" data-aos="fade-up">
+                <h2 class="pt-4">DESSERTS</h2>
+                <div class="heading-underline"></div>
+            </div>
+
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/mochi.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Mochi</h5>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check1">Oreo Flavor</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something" checked>
+                        <label class="form-check-label" for="check1">Red Bean Paste Flavor</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check3" name="option3" value="something" checked>
+                        <label class="form-check-label" for="check1">Matcha Flavor</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check4" name="option4" value="something" checked>
+                        <label class="form-check-label" for="check1">Vanilla Flavor</label>
+                      </div>
+                      <p><strong>SRD 25</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/dango.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Dango</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 20</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/cookies.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Chocolate Oatmeal Cookies</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 15</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/cheesecake.png" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Cheesecake</h5>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check1">Cherry Flavor</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something" checked>
+                        <label class="form-check-label" for="check1">Chocolate Flavor</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check3" name="option3" value="something" checked>
+                        <label class="form-check-label" for="check1">Lemon Flavor</label>
+                      </div>
+                      <p><strong>SRD 25</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/tiramisu.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Tiramisu</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 30</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4" data-aos="fade-up">
+                <div class="card" style="width: 100%">
+                    <img src="images/menu_items/strawberry_shortcake.jpg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                      <h5 class="card-title">Strawberry Shortcake</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                      <p><strong>SRD 35</strong></p>
+                      <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--BEVERAGES-->
+            <div class="col-12 narrow text-center mt-5" data-aos="fade-up">
+                <h2 class="pt-4">BEVERAGES</h2>
+                <div class="heading-underline"></div>
+            </div>
+    
+            <div class="row my-5">
+                <div class="col-md-4 my-4" data-aos="fade-up">
+                    <div class="card" style="width: 100%">
+                        <img src="images/menu_items/orangejuice.jpg" class="card-img-top" alt="Noodles">
+                        <div class="card-body">
+                          <h5 class="card-title">Orange Juice</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                          <p><strong>SRD 12.50</strong></p>
+                          <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-4" data-aos="fade-up">
+                    <div class="card" style="width: 100%">
+                        <img src="images/menu_items/maracuja.png" class="card-img-top" alt="Noodles">
+                        <div class="card-body">
+                          <h5 class="card-title">Maracuja Juice</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                          <p><strong>SRD 12.50</strong></p>
+                          <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-4" data-aos="fade-up">
+                    <div class="card" style="width: 100%">
+                        <img src="images/menu_items/lemonicetea.jpg" class="card-img-top" alt="Noodles">
+                        <div class="card-body">
+                          <h5 class="card-title">Lemon Iced Tea</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                          <p><strong>SRD 10</strong></p>
+                          <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-4" data-aos="fade-up">
+                    <div class="card" style="width: 100%">
+                        <img src="images/menu_items/sweeticetea.jpg" class="card-img-top" alt="Noodles">
+                        <div class="card-body">
+                          <h5 class="card-title">Sweet Iced Tea</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                          <p><strong>SRD 10</strong></p>
+                          <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-4" data-aos="fade-up">
+                    <div class="card" style="width: 100%">
+                        <img src="images/menu_items/kombucha.png" class="card-img-top" alt="Noodles">
+                        <div class="card-body">
+                          <h5 class="card-title">Kombucha Tea</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                          <p><strong>SRD 12.50</strong></p>
+                          <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-4" data-aos="fade-up">
+                    <div class="card" style="width: 100%">
+                        <img src="images/menu_items/sake.jpg" class="card-img-top" alt="Noodles">
+                        <div class="card-body">
+                          <h5 class="card-title">Sake</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur!</p>
+                          <p><strong>SRD 20</strong></p>
+                          <a href="#" class="btn btn-secondary btn-md">Order now</a>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
+    </section>
     <!--END OF MENU-->
 
     <!--START OF FOOTER-->
@@ -255,6 +458,11 @@
     </footer>
     <!--END OF FOOTER-->
     
+    <!--ANIMATE ON SCROLL SCRIPTS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!--JQUERY AND BOOTSTRAP BUNDLE (INCLUDES POPPER)-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 

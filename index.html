@@ -18,6 +18,9 @@
     
     <!--GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--ANIMATE ON SCROLL LIBRARY-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     
     <!--LOGO AND TITLE IN THE BOWSER TAB-->
     <link rel="shortcut icon" type="image" href="images/noodle logo white.png">
@@ -61,11 +64,12 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
-                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visit Us</a>
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Connect</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="https://www.facebook.com/" target="_blank">Facebook</a>
-                          <a class="dropdown-item" href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
-                          <a class="dropdown-item" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                            <a class="dropdown-item" href="login.html">Login</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                            <a class="dropdown-item" href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
+                            <a class="dropdown-item" href="https://www.instagram.com/" target="_blank">Instagram</a>
                         </div>
                 </ul>
 
@@ -164,7 +168,7 @@
     <!--END OF CAROUSEL-->
 
     <!--RESTAURANT NAME AND DESCRIPTION-->
-    <div class="col-12 narrow text-center">
+    <div class="col-12 narrow text-center" data-aos="fade-up">
         <h1>THE NOODLE BAR</h1>
         <div class="heading-underline"></div>
         <p class="lead">The approach to our menu was easy. We had no interest in trying to reinvent food. 
@@ -175,12 +179,12 @@
     <!--FIXED BACKGROUND: NOODLE DEALS-->
     <div class="fixed-background">
         <div class="row text-light py-5 px-5">
-            <div class="col-12 bg-custom text-center py-3">
-                <h1>TRY OUR NEW FIRE NOODLES TODAY!</h1>
+            <div class="col-12 bg-custom text-center py-3" data-aos="fade-up">
+                <h1>TRY OUR NEWEST DISH ON THE MENU TODAY!</h1>
                 <h4 class="py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, 
                     dignissimos ipsum itaque eveniet repudiandae quibusdam. Doloremque ipsam hic 
                     exercitationem quidem molestias. Dicta ad numquam labore.</h4>
-                    <a href="#" class="btn btn-outline-light btn-lg">Order Now</a>
+                    <a href="menu.html" class="btn btn-outline-light btn-lg">Order Now</a>
             </div>
         </div>
         <div class="fixed-wrap">
@@ -189,7 +193,7 @@
     </div>
 
     <!--START OF POPULAR CHOICES-->
-    <div class="col-12 narrow text-center mt-5">
+    <div class="col-12 narrow text-center mt-5" data-aos="fade-up">
         <h2 class="pt-4">POPULAR CHOICES</h2>
         <div class="heading-underline"></div>
         <p class="lead">A selection of our top 3 dishes this month.</p>
@@ -198,8 +202,8 @@
     <!--THREE (3) COLUMN SECTION OF POPULAR CHOICES-->
     <div class="container">
         <div class="row my-5">
-
-            <div class="custom-rd col-md-4 my-4">
+            <!--CHOICE 1-->
+            <div class="custom-rd col-md-4 my-4" data-aos="fade-right">
                 <img src="images/choice1.jpg" alt="review1" class="w-100">
                 <h4 class="my-4">Beef Noodles</h4>
                 <hr class="reviews-hr">
@@ -208,8 +212,8 @@
                     Consequuntur consectetur similique culpa fuga nemo error minus </p>
                     <a href="/menu.html" class="btn btn-outline-dark btn-md">Order Now</a>
             </div>
-
-            <div class="custom-rd col-md-4 my-4">
+            <!--CHOICE 2-->
+            <div class="custom-rd col-md-4 my-4" data-aos="fade-up">
                 <img src="images/choice2.jpg" alt="review1" class="w-100">
                 <h4 class="my-4">Chicken Noodles</h4>
                 <hr class="reviews-hr">
@@ -218,8 +222,8 @@
                     Consequuntur consectetur similique culpa fuga nemo error minus </p>
                     <a href="/menu.html" class="btn btn-outline-dark btn-md">Order Now</a>
             </div>
-
-            <div class="custom-rd col-md-4 my-4">
+            <!--CHOICE 3-->
+            <div class="custom-rd col-md-4 my-4" data-aos="fade-left">
                 <img src="images/choice3.jpg" alt="review1" class="w-100">
                 <h4 class="my-4">Shrimp Noodles</h4>
                 <hr class="reviews-hr">
@@ -235,7 +239,7 @@
 
     <!--START OF JUMBOTRON-->
     <div class="jumbotron">
-        <div class="col-12 narrow text-center">
+        <div class="col-12 narrow text-center" data-aos="fade-up">
             <h2 class="heading">REVIEWS</h2>
             <div class="heading-underline"></div>
             <p class="lead">See what others have to say about us.</p>
@@ -243,7 +247,7 @@
         <!--START OF ROWS-->
         <div class="row">
             <!--REVIEW 1-->
-            <div class="col-md-4 reviews">
+            <div class="col-md-4 reviews" data-aos="fade-right">
                 <div class="row">
                     <div class="col-md-4">
                         <img src="./images/review1.jpg" alt="review">
@@ -254,13 +258,13 @@
                         Nihil porro, earum cum ut assumenda dolore dicta accusamus eaque eos tenetur molestiae 
                         commodi aut illum rem dolorum ipsam at?
                         <hr class="reviews-hr">
-                        <cite>&#8212; Noodle Lover420 </cite>
+                        <cite>&#8212; Gerhard </cite>
                         </blockquote>
                     </div>
                 </div>
             </div>
             <!--REVIEW 2-->
-            <div class="col-md-4 reviews">
+            <div class="col-md-4 reviews" data-aos="fade-up">
                 <div class="row">
                     <div class="col-md-4">
                         <img src="./images/review2.jpg" alt="review">
@@ -271,13 +275,13 @@
                         Nihil porro, earum cum ut assumenda dolore dicta accusamus eaque eos tenetur molestiae 
                         commodi aut illum rem dolorum ipsam at?
                         <hr class="reviews-hr">
-                        <cite>&#8212; Nameless Stranger </cite>
+                        <cite>&#8212; Lucio </cite>
                         </blockquote>
                     </div>
                 </div>
             </div>
             <!--REVIEW 3-->
-            <div class="col-md-4 reviews">
+            <div class="col-md-4 reviews" data-aos="fade-left">
                 <div class="row">
                     <div class="col-md-4">
                         <img src="./images/review3.jpg" alt="review">
@@ -297,7 +301,7 @@
         <!--END OF ROWS-->
 
         <!--LOAD MORE REVIEWS BUTTON-->
-        <div class="col-12 narrow text-center">
+        <div class="col-12 narrow text-center" data-aos="fade-up">
             <a href="#" class="btn btn-secondary btn-md">Load more reviews</a>
         </div>
     </div>
@@ -314,11 +318,16 @@
             </div>
 
             <hr class="socket">
-            &copy; All rights reserved to The Noodle Bar.
+            &copy; 2022 - All rights reserved to The Noodle Bar.
         </div>
     </footer>
     <!--END OF FOOTER-->
     
+    <!--ANIMATE ON SCROLL SCRIPTS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!--JQUERY AND BOOTSTRAP BUNDLE (INCLUDES POPPER)-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
