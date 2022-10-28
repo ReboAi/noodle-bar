@@ -27,7 +27,7 @@
     <title>Media</title>
 </head>
 
-<body class="body-index">
+<body class="media-bg">
     <!--START OF NAVBAR-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <!--LOGO IN NAVBAR-->
@@ -107,10 +107,99 @@
     </div>
     <!--END OF SOCIAL SIDEBAR-->
 
+    <!--START OF PICTURE ROW-->
+    <div class= "container1">
+        <div class="title">
+            <h1> HOW OUR NOODLES ARE MADE </h1>
+            <p>Our noodles are produced mainly from flour, water and salt, and the basic steps of noodles production 
+                include dough mixing, sheeting, combining of sheets, resting, rolling and cutting, followed by different 
+                processing treatments (drying, boiling, steaming and frying) or a combination of these.</p>
+            <div class="heading-underline"></div>
+        </div>
+        <hr class="accent my-5">
 
-    <!--INSERT YOUR CODE HERE-->
+        <div class= "row">
+            <div class= "col-sm-4" data-aos="fade-right">
+                <div class= "feature-img float-left">
+                    <img src= "images/cooking.jpg" class= "rounded">
+                    <img src= "images/play.jpg" class = "rounded-circle play-btn"
+                    onclick="playVideo()">
+                </div>
+            </div>
+            <div class= "col-sm-4" data-aos="fade-up">
+                <div class= "feature-img float-right">
+                <img src= "images/cooking1.jpg" class= "rounded">
+                <img src= "images/play.jpg" class = "rounded-circle play-btn"
+                onclick="playVideo1()">
+                </div>
+            </div>
+            <div class= "col-sm-4" data-aos="fade-left">
+                <div class= "feature-img">
+                    <img src= "images/cooking2.jpg" class= "rounded">
+                    <img src= "images/play.jpg" class = "rounded-circle play-btn"
+                    onclick="playVideo2()">
+                </div>
+            </div>
+        </div>
+        <hr class="accent my-5">
+    </div>
+    <!--END OF PICTURE ROW-->
 
+    <!--BEGIN VIDEO GALLERY-->
+    <div class="embed-responsive embed-responsive-16by9 py-5" id= "videoPlayer">
+        <iframe class="embed-responsive-item mt-0" src="https://www.youtube.com/embed/8l9_OE9c6vg" allowfullscreen></iframe>
+        <img src= "images/closebutton.png" class = "rounded-circle close-btn"
+        onclick="stopVideo()">
+    </div>
+    <div class="embed-responsive embed-responsive-16by9 py-5" id= "videoPlayer1">
+        <iframe class="embed-responsive-item mt-0" src="https://www.youtube.com/embed/vPFoCNnaqIQ" allowfullscreen></iframe>
+        <img src= "images/closebutton.png" class = "rounded-circle close-btn"
+        onclick="stopVideo1()">
+    </div>
+    <div class="embed-responsive embed-responsive-16by9 py-5" id= "videoPlayer2">
+        <iframe class="embed-responsive-item mt-0" src="https://www.youtube.com/embed/ZRESBwsRS_U" allowfullscreen></iframe>
+        <img src= "images/closebutton.png" class = "rounded-circle close-btn"
+        onclick="stopVideo2()">
+    </div>
+    <!--END VIDEO GALLERY-->
 
+    <!--START OF MEDIA JAVASCRIPT-->
+    <script>
+        var videoPlayer= document.getElementById("videoPlayer");
+
+        function stopVideo(){
+        videoPlayer.style.display="none";
+        }
+
+        function playVideo(file) {
+        videoPlayer.src= file;
+        videoPlayer.style.display ="block";
+        }
+
+        var videoPlayer1= document.getElementById("videoPlayer1");
+
+        function stopVideo1(){
+        videoPlayer1.style.display="none";
+        }
+
+        function playVideo1(file) {
+        videoPlayer1.src= file;
+        videoPlayer1.style.display ="block";
+        }
+
+        var videoPlayer2= document.getElementById("videoPlayer2");
+
+        function stopVideo2(){
+        videoPlayer2.style.display="none";
+        }
+
+        function playVideo2(file) {
+        videoPlayer2.src= file;
+        videoPlayer2.style.display ="block";
+        }
+    </script>
+    <!--END OF MEDIA JAVASCRIPT-->
+    
     <!--START OF FOOTER-->
     <footer>
         <div class="container-fluid">

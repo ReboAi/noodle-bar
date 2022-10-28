@@ -1,12 +1,4 @@
 /*========== HOME PAGE ==========*/
-
-/*HORIZONTAL SCROLLBAR FIX*/
-html, body{
-  width:100%;
-  overflow-x:hidden;
-  position:relative;
-}
-
 /*NAVBAR*/
 .navbar-brand img{
     height: 3rem;
@@ -78,7 +70,7 @@ html, body{
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 .carousel-item{
-    height: 100vh;
+    height: 45rem;
     background: #000;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -123,7 +115,7 @@ html, body{
 
 /*FIXED BACKGROUND IMAGE CORRECTION FOR iOS*/
 .fixed-background {
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 /*FIXED BACKGROUND IMAGE AND TEXT*/
@@ -182,24 +174,24 @@ html, body{
     margin-top: 5rem !important;
 }
 .px-5{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /*POPULAR CHOICES SECTION*/
 .custom-rd img{
     border-radius: 1rem;
-    box-shadow: 0 0.5rem 0.5rem rgb(165, 165, 165);
+    border: 2px solid black;
 }
 .btn-outline-dark{
     border-radius: 0px !important;
 }
-  
+
 /*JUMBOTRON & REVIEW SECTION*/
 .reviews img{
     width: 100%;
     border-radius: 50%;
-    border: 3px solid rgb(239, 136, 41);
+    border: 3px solid black;
 }
 blockquote .fa-solid{
     color: rgb(239, 136, 41);
@@ -243,6 +235,98 @@ hr.socket{
     border-top: 0.1rem solid #7e7e7e;
     margin-top: 1rem;
     padding-top: 0.5rem;
+}
+
+
+
+/*========== MENU PAGE ==========*/
+.card img{
+    width: 110px;
+    height: 80px;
+    box-shadow: 5px 5px 5px;
+}
+
+#background {
+  border: 5px solid black;
+}
+
+#about {
+  border: 5px solid black;
+  text-align: left;
+  background: rgba(240, 240, 240,0.7);
+}
+
+/*========== ABOUT US PAGE ==========*/
+body{
+    background-color: rgb(231, 231, 231);
+}
+
+.jumbotron {
+    background-color: black;
+    color: white;
+    padding: 2rem 0 2rem;
+    margin-top: 1rem;
+}
+#m1 {
+    color: Black;
+    font-size: 100px;
+    background-image: url("images/banner1.jpeg") !important;
+    background-size: cover;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    height: auto;
+    opacity: 0.8;
+}
+
+#m2 {
+    color: Black;
+    font-weight: bolder;
+    text-align: Center;
+    margin:0px;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom left, grey, white);
+    background-size: 1500px 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#m3 {
+    color: black;
+    font-size: 100px;
+    text-align: center;
+    background-image: url("images/banner2.jpeg");
+    background-size: cover;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+
+}
+
+#m4 {
+    color: Black;
+    font-weight: bolder;
+    text-align: Center;
+    margin:0px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 1500px 500px;
+    background-position: center;
+    opacity: 0.8;
+    }
+
+.table {
+    color: #000000;
+    font-weight: bolder;
+    text-align: justify;
+    margin: 0px;
+    background-image: url("images/banner3.jpeg");
+    background-blend-mode: difference;
+    background-size: cover;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-resolution: snap;
+    opacity: 0.95;
 }
 
 
@@ -307,66 +391,3 @@ hr.socket{
     color: rgb(253, 187, 125);
     display: inline-block;
 }
-
-
-
-/*========== MEDIA PAGE ==========*/
-.media-bg{
-    background: url(./images/media_bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-}
-.container1 {
-    text-align: center;
-    width: 70%;
-    margin: 100px auto;
-    margin-right: 20px auto;
-}
-.container1 h1{
-    padding: 6px 0;
-    text-align: center;
-}
-.feature-img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgb(143, 143, 143);
-}
-.embed-responsive {
-    left: 16.8%;
-    top: 15%;
-    position:absolute;
-    width: 70.5%;
-    margin-top: -25px;
-    margin-left: -25px;
-    display: none;
-}
-.play-btn {
-    left: 50%;
-    top: 50%;
-    position: absolute;
-    margin-top: -25px;
-    margin-left: -25px;
-    width: 20%;
-    cursor: pointer;
-}
-img.rounded {
-    width: 100%;
-}
-.close-btn {
-    left: 96%;
-    top: 94%;
-    position: absolute;
-    margin-top: -25px;
-    margin-left: -25px;
-    width: 5%;
-    cursor: pointer;
-}
-
-
-
-/*========== GAME PAGE ==========*/
